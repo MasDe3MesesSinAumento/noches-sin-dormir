@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú Principal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+      margin: 0;
+    }
+
+    /* 🖼️ Logo centrado */
+    #logo {
+      width: 180px;
+      max-width: 80%;
+      margin-bottom: 30px;
+      animation: fadeInDown 1s ease;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #f1c40f; /* amarillo bet */
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .boton {
+      display: block;
+      width: 220px;
+      margin: 15px auto;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s, background 0.3s;
+      animation: fadeInUp 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    /* Colores diferenciados */
+    .Cpc01 { background-color: #f1c40f; color: #000; } 
+    .Cpc02 { background-color: #9B59B6; color: #000; } 
+    .Cpc03 { background-color: #1ABC9C; color: #000; }
+     .Epc01 { background-color: #046865; color: #000; } 
+     .Fpc01 { background-color: #5C1A1B; color: #000; } 
+     .AlvPc { background-color: #BE024A; color: #000; } 
+    
+
+    .boton:hover {
+      transform: scale(1.08);
+      filter: brightness(1.1);
+    }
+
+    /* Animaciones */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .boton {
+        width: 90%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 🖼️ Espacio para tu logo -->
+  <img src="logo.webp" alt="Logo Bet300" id="logo">
+
+  <h1>Selecciona tu PC</h1>
+
+  <a href="pc01.html" class="boton Cpc01">CPC01</a>
+  <a href="pc02.html" class="boton Cpc02">CPC02</a>
+  <a href="pc03.html" class="boton Cpc03">CPC03</a>
+  <a href="Epc01.html" class="boton Epc01">EPC01</a>
+  <a href="Fpc01.html" class="boton Fpc01">FPC01</a>
+  <a href="alvpc.html" class="boton AlvPc">AlvPc</a>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
